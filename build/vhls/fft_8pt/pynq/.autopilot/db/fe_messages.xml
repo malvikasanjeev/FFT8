@@ -1,0 +1,159 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bfs1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bfs2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bfs3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II =1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/prathuish/Desktop/HLS/FFT/src/common.tcl:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_8pt" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fft_8pt" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_8pt" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=in_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_8pt" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=out_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_8pt" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_8pt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II= 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_8pt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II =1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:208:68" msg_body="Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base&lt;1, false&gt;::ap_int_base(bool)'">
+        <args Callee="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" Caller="ap_int_base&lt;1, false&gt;::ap_int_base(bool)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:23:37" msg_body="Duplicating function 'std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:359:11" msg_body="Duplicating function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="../../src/fft_8pt.cpp:22:26" msg_body="Duplicating function 'std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:329:11" msg_body="Duplicating function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1196:23" msg_body="Duplicating function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1177:29" msg_body="Duplicating function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1186:29" msg_body="Duplicating function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1195:23" msg_body="Duplicating function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1176:29" msg_body="Duplicating function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1185:29" msg_body="Duplicating function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="../../src/fft8_IP.h:13:8" msg_body="Duplicating function 'std::complex&lt;float&gt;::complex(float, float) (.112.115)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="std::complex&lt;float&gt;::complex(float, float) (.112.115)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft8_IP.h:13:0" msg_body="Inlining function 'std::complex&lt;float&gt;::complex(float, float) (.112.115.222)' into 'axis_data::axis_data()'">
+        <args Callee="std::complex&lt;float&gt;::complex(float, float) (.112.115.222)" Caller="axis_data::axis_data()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0" msg_body="Inlining function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60.221)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)'">
+        <args Callee="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60.221)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0" msg_body="Inlining function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57.220)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)'">
+        <args Callee="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57.220)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:327:0" msg_body="Inlining function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)' into 'std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.218)'">
+        <args Callee="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97)" Caller="std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.218)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0" msg_body="Inlining function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60.221)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)'">
+        <args Callee="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60.221)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0" msg_body="Inlining function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57.220)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)'">
+        <args Callee="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57.220)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:357:0" msg_body="Inlining function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)' into 'std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.216)'">
+        <args Callee="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72)" Caller="std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.216)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:19:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.218)' into 'bfs1(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.218)" Caller="bfs1(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:19:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.216)' into 'bfs1(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;) (.216)" Caller="bfs1(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1193:0" msg_body="Inlining function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60.221)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator*=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.42.48.182.191)'">
+        <args Callee="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60.221)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator*=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.42.48.182.191)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1193:0" msg_body="Inlining function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57.220)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator*=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.42.48.182.191)'">
+        <args Callee="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57.220)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator*=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.42.48.182.191)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:387:0" msg_body="Inlining function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator*=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.42.48.182.191)' into 'std::complex&lt;float&gt; std::operator*&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)'">
+        <args Callee="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator*=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.42.48.182.191)" Caller="std::complex&lt;float&gt; std::operator*&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0" msg_body="Inlining function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97.219)'">
+        <args Callee="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97.219)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0" msg_body="Inlining function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97.219)'">
+        <args Callee="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97.219)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:327:0" msg_body="Inlining function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97.219)' into 'std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)'">
+        <args Callee="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator+=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.78.85.91.97.219)" Caller="std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0" msg_body="Inlining function 'std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72.217)'">
+        <args Callee="std::complex&lt;float&gt;::real[abi:cxx11]() const (.36.60)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72.217)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0" msg_body="Inlining function 'std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)' into 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72.217)'">
+        <args Callee="std::complex&lt;float&gt;::imag[abi:cxx11]() const (.33.57)" Caller="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72.217)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:357:0" msg_body="Inlining function 'std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72.217)' into 'std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)'">
+        <args Callee="std::complex&lt;float&gt;&amp; std::complex&lt;float&gt;::operator-=&lt;float&gt;(std::complex&lt;float&gt; const&amp;) (.30.54.66.72.217)" Caller="std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:26:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator*&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' into 'bfs2(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator*&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)" Caller="bfs2(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:26:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' into 'bfs2(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)" Caller="bfs2(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:26:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' into 'bfs2(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)" Caller="bfs2(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:35:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator*&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' into 'bfs3(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator*&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)" Caller="bfs3(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:35:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' into 'bfs3(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator+&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)" Caller="bfs3(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:35:0" msg_body="Inlining function 'std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)' into 'bfs3(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)'">
+        <args Callee="std::complex&lt;float&gt; std::operator-&lt;float&gt;(std::complex&lt;float&gt; const&amp;, std::complex&lt;float&gt; const&amp;)" Caller="bfs3(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:42:0" msg_body="Inlining function 'std::complex&lt;float&gt;::complex(float, float) (.112.115)' into 'fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)'">
+        <args Callee="std::complex&lt;float&gt;::complex(float, float) (.112.115)" Caller="fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:42:0" msg_body="Inlining function 'axis_data::axis_data()' into 'fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)'">
+        <args Callee="axis_data::axis_data()" Caller="fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:42:0" msg_body="Inlining function 'bit_reverse(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)' into 'fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)'">
+        <args Callee="bit_reverse(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)" Caller="fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/fft_8pt.cpp:42:0" msg_body="Inlining function 'bfs1(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)' into 'fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)'">
+        <args Callee="bfs1(std::complex&lt;float&gt;*, std::complex&lt;float&gt;*)" Caller="fft_8pt(hls::stream&lt;axis_data, 0&gt;&amp;, hls::stream&lt;axis_data, 0&gt;&amp;)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,323 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile=0 -module_auto_prefix -mult_keep_attribute -reset state -reset_async=0 -reset_level low 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.454 seconds; current allocated memory: 0.516 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 103.547 MB.
+INFO: [HLS 200-10] Analyzing design file '../../src/fft_8pt.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.509 seconds; current allocated memory: 106.188 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(bool)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:208:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(bool)' into 'ap_uint<1>::ap_uint(bool)'
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (../../src/fft_8pt.cpp:23:37)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:359:11)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (../../src/fft_8pt.cpp:22:26)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:329:11)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::imag[abi:cxx11]() const (.33.57)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1196:23)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::imag[abi:cxx11]() const (.33.57)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1177:29)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::imag[abi:cxx11]() const (.33.57)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1186:29)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::real[abi:cxx11]() const (.36.60)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1195:23)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::real[abi:cxx11]() const (.36.60)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1176:29)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::real[abi:cxx11]() const (.36.60)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1185:29)
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::complex(float, float) (.112.115)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (../../src/fft8_IP.h:13:8)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float) (.112.115.222)' into 'axis_data::axis_data()' (../../src/fft8_IP.h:13:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const (.36.60.221)' into 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const (.33.57.220)' into 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)' into 'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&) (.218)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:327:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const (.36.60.221)' into 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const (.33.57.220)' into 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)' into 'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&) (.216)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:357:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&) (.218)' into 'bfs1(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:19:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&) (.216)' into 'bfs1(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:19:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const (.36.60.221)' into 'std::complex<float>& std::complex<float>::operator*=<float>(std::complex<float> const&) (.42.48.182.191)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1193:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const (.33.57.220)' into 'std::complex<float>& std::complex<float>::operator*=<float>(std::complex<float> const&) (.42.48.182.191)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1193:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>& std::complex<float>::operator*=<float>(std::complex<float> const&) (.42.48.182.191)' into 'std::complex<float> std::operator*<float>(std::complex<float> const&, std::complex<float> const&)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:387:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const (.36.60)' into 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97.219)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const (.33.57)' into 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97.219)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1175:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97.219)' into 'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:327:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const (.36.60)' into 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72.217)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const (.33.57)' into 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72.217)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:1184:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72.217)' into 'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)' (C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex:357:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator*<float>(std::complex<float> const&, std::complex<float> const&)' into 'bfs2(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)' into 'bfs2(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)' into 'bfs2(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator*<float>(std::complex<float> const&, std::complex<float> const&)' into 'bfs3(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)' into 'bfs3(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)' into 'bfs3(std::complex<float>*, std::complex<float>*)' (../../src/fft_8pt.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float) (.112.115)' into 'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)' (../../src/fft_8pt.cpp:42:0)
+INFO: [HLS 214-178] Inlining function 'axis_data::axis_data()' into 'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)' (../../src/fft_8pt.cpp:42:0)
+INFO: [HLS 214-178] Inlining function 'bit_reverse(std::complex<float>*, std::complex<float>*)' into 'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)' (../../src/fft_8pt.cpp:42:0)
+INFO: [HLS 214-178] Inlining function 'bfs1(std::complex<float>*, std::complex<float>*)' into 'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)' (../../src/fft_8pt.cpp:42:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.633 seconds; current allocated memory: 106.953 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 106.953 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 119.262 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'bfs3' into 'fft_8pt' (../../src/fft_8pt.cpp:69) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 129.039 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' (../../src/fft_8pt.cpp:49) in function 'fft_8pt' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' (../../src/fft_8pt.cpp:50) in function 'fft_8pt' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' (../../src/fft_8pt.cpp:62) in function 'fft_8pt' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_14_1' (../../src/fft_8pt.cpp:14) in function 'fft_8pt' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'W._M_value.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'W._M_value' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'W._M_value.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'W._M_value' in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'bfs3' into 'fft_8pt' (../../src/fft_8pt.cpp:69) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 158.660 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (../../src/fft_8pt.cpp:27:31) in function 'bfs2'.
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer._M_value' 
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer._M_value' (../../src/fft_8pt.cpp:58:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'reversed_buffer._M_value' (../../src/fft_8pt.cpp:15:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp1._M_value' (../../src/fft_8pt.cpp:22:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp1._M_value' (../../src/fft_8pt.cpp:23:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'FFT_output.0' (../../src/fft_8pt.cpp:38:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'FFT_output.0' (../../src/fft_8pt.cpp:39:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp2.0' (../../src/fft_8pt.cpp:30:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp2.0' (../../src/fft_8pt.cpp:31:30)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 233.207 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft_8pt' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 237.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 239.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 239.188 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 239.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_VITIS_LOOP_55_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_55_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 239.680 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 239.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 239.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 240.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_VITIS_LOOP_14_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_14_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_14_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 240.277 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 240.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 240.691 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 240.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bfs2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2'.
+WARNING: [HLS 200-880] The II Violation in module 'bfs2' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('temp2_0_addr_write_ln31', ../../src/fft_8pt.cpp:31) of variable '__r._M_value' on array 'temp2_0' and 'store' operation ('temp2_0_addr11_write_ln30', ../../src/fft_8pt.cpp:30) of variable '__r._M_value' on array 'temp2_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 19, loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 241.781 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.177 seconds; current allocated memory: 241.926 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_VITIS_LOOP_36_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_36_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.234 seconds; current allocated memory: 242.180 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 242.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt_Pipeline_VITIS_LOOP_72_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_72_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_72_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.241 seconds; current allocated memory: 242.816 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 242.824 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_8pt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 243.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 243.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 244.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 246.242 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_VITIS_LOOP_55_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_VITIS_LOOP_55_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 246.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 247.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_VITIS_LOOP_14_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft_8pt_Pipeline_VITIS_LOOP_14_1' pipeline 'VITIS_LOOP_14_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_VITIS_LOOP_14_1'.
+INFO: [RTMG 210-279] Implementing memory 'fft_8pt_fft_8pt_Pipeline_VITIS_LOOP_14_1_rev8_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 248.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft_8pt_Pipeline_VITIS_LOOP_20_1' pipeline 'VITIS_LOOP_20_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_VITIS_LOOP_20_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.197 seconds; current allocated memory: 249.578 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bfs2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'bfs2' pipeline 'VITIS_LOOP_27_1_VITIS_LOOP_28_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bfs2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.293 seconds; current allocated memory: 251.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_VITIS_LOOP_36_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft_8pt_Pipeline_VITIS_LOOP_36_1' pipeline 'VITIS_LOOP_36_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_VITIS_LOOP_36_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.611 seconds; current allocated memory: 253.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt_Pipeline_VITIS_LOOP_72_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft_8pt_Pipeline_VITIS_LOOP_72_2' pipeline 'VITIS_LOOP_72_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt_Pipeline_VITIS_LOOP_72_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.334 seconds; current allocated memory: 254.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_8pt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft_8pt/in_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft_8pt/out_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fft_8pt' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_8pt'.
+INFO: [RTMG 210-278] Implementing memory 'fft_8pt_temp2_0_RAM_AUTO_1R1W_ram' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'fft_8pt_FFT_output_0_RAM_AUTO_1R1W_ram' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'fft_8pt_buffer_M_value_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'fft_8pt_temp1_M_value_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'fft_8pt_reversed_buffer_M_value_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.349 seconds; current allocated memory: 257.762 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.82 seconds; current allocated memory: 262.129 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.733 seconds; current allocated memory: 264.375 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fft_8pt.
+INFO: [VLOG 209-307] Generating Verilog RTL for fft_8pt.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.82 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 17.644 seconds; current allocated memory: 161.922 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -description N-point Pipelined FFT with streaming data -vendor iitm.ac.in -library ee5332 -version 1.0 -display_name N-point Pipelined FFT with streaming data -taxonomy /EE5332 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file fft_8pt/pynq/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 21.737 seconds; current allocated memory: 5.488 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 3 seconds. Total elapsed time: 54.386 seconds; peak allocated memory: 270.789 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sat May 31 09:39:14 2025...

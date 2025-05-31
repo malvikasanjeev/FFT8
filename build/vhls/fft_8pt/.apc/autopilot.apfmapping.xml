@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft_8pt.cpp" path="C:\Users\prathuish\Desktop\HLS\FFT\src\fft_8pt.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="fft8_IP_tb.cpp" path="C:\Users\prathuish\Desktop\HLS\FFT\src\fft8_IP_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

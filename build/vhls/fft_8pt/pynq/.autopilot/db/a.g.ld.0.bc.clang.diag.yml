@@ -1,0 +1,595 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 208, Column: 68 }
+Function:        _ZN11ap_int_baseILi1ELb0EEC2Eb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi1ELb0EEC2EDq1_j
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 523, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<1, false>::ap_int_base(bool)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 208, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN7ap_uintILi1EEC2Eb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<1, false>::ap_int_base(bool)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 208, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<1>::ap_uint(bool)'
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 23, Column: 37 }
+Function:        _Z4bfs1PSt7complexIfES1_
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 359, Column: 11 }
+Function:        _ZStmiIfESt7complexIT_ERKS2_S4_
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 22, Column: 26 }
+Function:        _Z4bfs1PSt7complexIfES1_
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 329, Column: 11 }
+Function:        _ZStplIfESt7complexIT_ERKS2_S4_
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1196, Column: 23 }
+Function:        _ZNSt7complexIfEmLIfEERS0_RKS_IT_E.42.48.182.191
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::imag[abi:cxx11]() const (.33.57)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1177, Column: 29 }
+Function:        _ZNSt7complexIfEpLIfEERS0_RKS_IT_E.78.85.91.97
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::imag[abi:cxx11]() const (.33.57)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1186, Column: 29 }
+Function:        _ZNSt7complexIfEmIIfEERS0_RKS_IT_E.30.54.66.72
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::imag[abi:cxx11]() const (.33.57)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1195, Column: 23 }
+Function:        _ZNSt7complexIfEmLIfEERS0_RKS_IT_E.42.48.182.191
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::real[abi:cxx11]() const (.36.60)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1176, Column: 29 }
+Function:        _ZNSt7complexIfEpLIfEERS0_RKS_IT_E.78.85.91.97
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::real[abi:cxx11]() const (.36.60)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1185, Column: 29 }
+Function:        _ZNSt7complexIfEmIIfEERS0_RKS_IT_E.30.54.66.72
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::real[abi:cxx11]() const (.36.60)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: ../../src/fft8_IP.h, Line: 13, Column: 8 }
+Function:        _ZN9axis_dataC2Ev
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'std::complex<float>::complex(float, float) (.112.115)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft8_IP.h, Line: 13, Column: 0 }
+Function:        _ZN9axis_dataC2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::complex(float, float) (.112.115.222)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1081, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'axis_data::axis_data()'
+    DebugLoc:        { File: ../../src/fft8_IP.h, Line: 13, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1175, Column: 0 }
+Function:        _ZNSt7complexIfEpLIfEERS0_RKS_IT_E.78.85.91.97
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::real[abi:cxx11]() const (.36.60.221)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1097, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1175, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1175, Column: 0 }
+Function:        _ZNSt7complexIfEpLIfEERS0_RKS_IT_E.78.85.91.97
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::imag[abi:cxx11]() const (.33.57.220)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1101, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1175, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 327, Column: 0 }
+Function:        _ZStplIfESt7complexIT_ERKS2_S4_.218
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1175, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&) (.218)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 327, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1184, Column: 0 }
+Function:        _ZNSt7complexIfEmIIfEERS0_RKS_IT_E.30.54.66.72
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::real[abi:cxx11]() const (.36.60.221)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1097, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1184, Column: 0 }
+Function:        _ZNSt7complexIfEmIIfEERS0_RKS_IT_E.30.54.66.72
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::imag[abi:cxx11]() const (.33.57.220)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1101, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 357, Column: 0 }
+Function:        _ZStmiIfESt7complexIT_ERKS2_S4_.216
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1184, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&) (.216)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 357, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 19, Column: 0 }
+Function:        _Z4bfs1PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&) (.218)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 327, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs1(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 19, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 19, Column: 0 }
+Function:        _Z4bfs1PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&) (.216)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 357, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs1(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 19, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1193, Column: 0 }
+Function:        _ZNSt7complexIfEmLIfEERS0_RKS_IT_E.42.48.182.191
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::real[abi:cxx11]() const (.36.60.221)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1097, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator*=<float>(std::complex<float> const&) (.42.48.182.191)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1193, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1193, Column: 0 }
+Function:        _ZNSt7complexIfEmLIfEERS0_RKS_IT_E.42.48.182.191
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::imag[abi:cxx11]() const (.33.57.220)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1101, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator*=<float>(std::complex<float> const&) (.42.48.182.191)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1193, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 387, Column: 0 }
+Function:        _ZStmlIfESt7complexIT_ERKS2_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>& std::complex<float>::operator*=<float>(std::complex<float> const&) (.42.48.182.191)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1193, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float> std::operator*<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 387, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1175, Column: 0 }
+Function:        _ZNSt7complexIfEpLIfEERS0_RKS_IT_E.78.85.91.97.219
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::real[abi:cxx11]() const (.36.60)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1097, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97.219)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1175, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1175, Column: 0 }
+Function:        _ZNSt7complexIfEpLIfEERS0_RKS_IT_E.78.85.91.97.219
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::imag[abi:cxx11]() const (.33.57)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1101, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97.219)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1175, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 327, Column: 0 }
+Function:        _ZStplIfESt7complexIT_ERKS2_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>& std::complex<float>::operator+=<float>(std::complex<float> const&) (.78.85.91.97.219)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1175, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 327, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1184, Column: 0 }
+Function:        _ZNSt7complexIfEmIIfEERS0_RKS_IT_E.30.54.66.72.217
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::real[abi:cxx11]() const (.36.60)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1097, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72.217)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 1184, Column: 0 }
+Function:        _ZNSt7complexIfEmIIfEERS0_RKS_IT_E.30.54.66.72.217
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::imag[abi:cxx11]() const (.33.57)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1101, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72.217)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                   Line: 357, Column: 0 }
+Function:        _ZStmiIfESt7complexIT_ERKS2_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>& std::complex<float>::operator-=<float>(std::complex<float> const&) (.30.54.66.72.217)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1184, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 357, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 26, Column: 0 }
+Function:        _Z4bfs2PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator*<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 387, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs2(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 26, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 26, Column: 0 }
+Function:        _Z4bfs2PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 327, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs2(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 26, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 26, Column: 0 }
+Function:        _Z4bfs2PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 357, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs2(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 26, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 35, Column: 0 }
+Function:        _Z4bfs3PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator*<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 387, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs3(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 35, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 35, Column: 0 }
+Function:        _Z4bfs3PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator+<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 327, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs3(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 35, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 35, Column: 0 }
+Function:        _Z4bfs3PSt7complexIfES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float> std::operator-<float>(std::complex<float> const&, std::complex<float> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 357, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bfs3(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 35, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+Function:        _Z7fft_8ptRN3hls6streamI9axis_dataLi0EEES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::complex<float>::complex(float, float) (.112.115)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\complex', 
+                       Line: 1081, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+Function:        _Z7fft_8ptRN3hls6streamI9axis_dataLi0EEES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'axis_data::axis_data()'
+    DebugLoc:        { File: ../../src/fft8_IP.h, Line: 13, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+Function:        _Z7fft_8ptRN3hls6streamI9axis_dataLi0EEES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bit_reverse(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 13, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+Function:        _Z7fft_8ptRN3hls6streamI9axis_dataLi0EEES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bfs1(std::complex<float>*, std::complex<float>*)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 19, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fft_8pt(hls::stream<axis_data, 0>&, hls::stream<axis_data, 0>&)'
+    DebugLoc:        { File: ../../src/fft_8pt.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...

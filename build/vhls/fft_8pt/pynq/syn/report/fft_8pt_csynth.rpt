@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_8pt'
+================================================================
+* Date:           Sat May 31 09:38:50 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        fft_8pt
+* Solution:       pynq (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      126|      126|  1.260 us|  1.260 us|  127|  127|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                             |                                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                   Instance                  |              Module              |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_fft_8pt_Pipeline_1_fu_82                 |fft_8pt_Pipeline_1                |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+        |grp_fft_8pt_Pipeline_2_fu_90                 |fft_8pt_Pipeline_2                |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+        |grp_fft_8pt_Pipeline_VITIS_LOOP_55_1_fu_98   |fft_8pt_Pipeline_VITIS_LOOP_55_1  |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+        |grp_fft_8pt_Pipeline_4_fu_106                |fft_8pt_Pipeline_4                |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+        |grp_fft_8pt_Pipeline_VITIS_LOOP_14_1_fu_112  |fft_8pt_Pipeline_VITIS_LOOP_14_1  |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+        |grp_fft_8pt_Pipeline_VITIS_LOOP_20_1_fu_122  |fft_8pt_Pipeline_VITIS_LOOP_20_1  |       12|       12|  0.120 us|  0.120 us|   12|   12|       no|
+        |grp_bfs2_fu_130                              |bfs2                              |       26|       26|  0.260 us|  0.260 us|   26|   26|       no|
+        |grp_fft_8pt_Pipeline_VITIS_LOOP_36_1_fu_140  |fft_8pt_Pipeline_VITIS_LOOP_36_1  |       21|       21|  0.210 us|  0.210 us|   21|   21|       no|
+        |grp_fft_8pt_Pipeline_VITIS_LOOP_72_2_fu_152  |fft_8pt_Pipeline_VITIS_LOOP_72_2  |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+        +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|   24|    3740|   4941|    -|
+|Memory           |        0|    -|     608|     72|    0|
+|Multiplexer      |        -|    -|       -|   1158|    -|
+|Register         |        -|    -|      26|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   24|    4374|   6175|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   10|       4|     11|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------+------------------------------------+---------+----+------+------+-----+
+    |                   Instance                  |               Module               | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +---------------------------------------------+------------------------------------+---------+----+------+------+-----+
+    |grp_bfs2_fu_130                              |bfs2                                |        0|   0|   731|   660|    0|
+    |fadd_32ns_32ns_32_5_full_dsp_1_U54           |fadd_32ns_32ns_32_5_full_dsp_1      |        0|   2|   205|   390|    0|
+    |faddfsub_32ns_32ns_32_5_full_dsp_1_U53       |faddfsub_32ns_32ns_32_5_full_dsp_1  |        0|   2|   205|   390|    0|
+    |faddfsub_32ns_32ns_32_5_full_dsp_1_U55       |faddfsub_32ns_32ns_32_5_full_dsp_1  |        0|   2|   205|   390|    0|
+    |faddfsub_32ns_32ns_32_5_full_dsp_1_U56       |faddfsub_32ns_32ns_32_5_full_dsp_1  |        0|   2|   205|   390|    0|
+    |grp_fft_8pt_Pipeline_1_fu_82                 |fft_8pt_Pipeline_1                  |        0|   0|     5|    46|    0|
+    |grp_fft_8pt_Pipeline_2_fu_90                 |fft_8pt_Pipeline_2                  |        0|   0|     5|    46|    0|
+    |grp_fft_8pt_Pipeline_4_fu_106                |fft_8pt_Pipeline_4                  |        0|   0|     5|    46|    0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_14_1_fu_112  |fft_8pt_Pipeline_VITIS_LOOP_14_1    |        0|   0|    20|    61|    0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_20_1_fu_122  |fft_8pt_Pipeline_VITIS_LOOP_20_1    |        0|   0|   409|   118|    0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_36_1_fu_140  |fft_8pt_Pipeline_VITIS_LOOP_36_1    |        0|  10|  1445|  1620|    0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_55_1_fu_98   |fft_8pt_Pipeline_VITIS_LOOP_55_1    |        0|   0|     6|    62|    0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_72_2_fu_152  |fft_8pt_Pipeline_VITIS_LOOP_72_2    |        0|   0|     8|    80|    0|
+    |fmul_32ns_32ns_32_4_max_dsp_1_U57            |fmul_32ns_32ns_32_4_max_dsp_1       |        0|   3|   143|   321|    0|
+    |fmul_32ns_32ns_32_4_max_dsp_1_U58            |fmul_32ns_32ns_32_4_max_dsp_1       |        0|   3|   143|   321|    0|
+    +---------------------------------------------+------------------------------------+---------+----+------+------+-----+
+    |Total                                        |                                    |        0|  24|  3740|  4941|    0|
+    +---------------------------------------------+------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------------------------+---------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |            Memory           |                 Module                | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------------------+---------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |FFT_output_0_U               |FFT_output_0_RAM_AUTO_1R1W             |        0|  72|  12|    0|     8|   32|     1|          256|
+    |FFT_output_1_U               |FFT_output_0_RAM_AUTO_1R1W             |        0|  72|  12|    0|     8|   32|     1|          256|
+    |buffer_M_value_U             |buffer_M_value_RAM_AUTO_1R1W           |        0|  32|   4|    0|     8|   32|     1|          256|
+    |buffer_M_value_1_U           |buffer_M_value_RAM_AUTO_1R1W           |        0|  32|   4|    0|     8|   32|     1|          256|
+    |reversed_buffer_M_value_U    |reversed_buffer_M_value_RAM_AUTO_1R1W  |        0|  64|   4|    0|     8|   32|     1|          256|
+    |reversed_buffer_M_value_1_U  |reversed_buffer_M_value_RAM_AUTO_1R1W  |        0|  64|   4|    0|     8|   32|     1|          256|
+    |temp1_M_value_U              |temp1_M_value_RAM_AUTO_1R1W            |        0|  64|   4|    0|     8|   32|     1|          256|
+    |temp1_M_value_1_U            |temp1_M_value_RAM_AUTO_1R1W            |        0|  64|   4|    0|     8|   32|     1|          256|
+    |temp2_0_U                    |temp2_0_RAM_AUTO_1R1W                  |        0|  72|  12|    0|     8|   32|     1|          256|
+    |temp2_1_U                    |temp2_0_RAM_AUTO_1R1W                  |        0|  72|  12|    0|     8|   32|     1|          256|
+    +-----------------------------+---------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                        |                                       |        0| 608|  72|    0|    80|  320|    10|         2560|
+    +-----------------------------+---------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                         Variable Name                         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_72_2_fu_152_out_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_on_subcall_done                                |        or|   0|  0|   2|           1|           1|
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                          |          |   0|  0|   4|           2|           2|
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------+----+-----------+-----+-----------+
+    |                Name                | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------+----+-----------+-----+-----------+
+    |FFT_output_0_address0               |  14|          3|    3|          9|
+    |FFT_output_0_ce0                    |  14|          3|    1|          3|
+    |FFT_output_0_ce1                    |   9|          2|    1|          2|
+    |FFT_output_0_we0                    |   9|          2|    1|          2|
+    |FFT_output_0_we1                    |   9|          2|    1|          2|
+    |FFT_output_1_address0               |  14|          3|    3|          9|
+    |FFT_output_1_ce0                    |  14|          3|    1|          3|
+    |FFT_output_1_ce1                    |   9|          2|    1|          2|
+    |FFT_output_1_we0                    |   9|          2|    1|          2|
+    |FFT_output_1_we1                    |   9|          2|    1|          2|
+    |ap_NS_fsm                           |  87|         18|    1|         18|
+    |buffer_M_value_1_address0           |  20|          4|    3|         12|
+    |buffer_M_value_1_ce0                |  20|          4|    1|          4|
+    |buffer_M_value_1_d0                 |  14|          3|   32|         96|
+    |buffer_M_value_1_we0                |  14|          3|    1|          3|
+    |buffer_M_value_address0             |  20|          4|    3|         12|
+    |buffer_M_value_ce0                  |  20|          4|    1|          4|
+    |buffer_M_value_d0                   |  14|          3|   32|         96|
+    |buffer_M_value_we0                  |  14|          3|    1|          3|
+    |grp_fu_162_ce                       |  20|          4|    1|          4|
+    |grp_fu_162_opcode                   |  20|          4|    2|          8|
+    |grp_fu_162_p0                       |  20|          4|   32|        128|
+    |grp_fu_162_p1                       |  20|          4|   32|        128|
+    |grp_fu_166_ce                       |  20|          4|    1|          4|
+    |grp_fu_166_p0                       |  20|          4|   32|        128|
+    |grp_fu_166_p1                       |  20|          4|   32|        128|
+    |grp_fu_170_ce                       |  20|          4|    1|          4|
+    |grp_fu_170_opcode                   |  20|          4|    2|          8|
+    |grp_fu_170_p0                       |  20|          4|   32|        128|
+    |grp_fu_170_p1                       |  20|          4|   32|        128|
+    |grp_fu_174_ce                       |  14|          3|    1|          3|
+    |grp_fu_174_opcode                   |  14|          3|    2|          6|
+    |grp_fu_174_p0                       |  14|          3|   32|         96|
+    |grp_fu_174_p1                       |  14|          3|   32|         96|
+    |grp_fu_178_ce                       |  14|          3|    1|          3|
+    |grp_fu_178_p0                       |  14|          3|   32|         96|
+    |grp_fu_178_p1                       |  14|          3|   32|         96|
+    |grp_fu_182_ce                       |  14|          3|    1|          3|
+    |grp_fu_182_p0                       |  14|          3|   32|         96|
+    |grp_fu_182_p1                       |  14|          3|   32|         96|
+    |in_stream_TREADY_int_regslice       |   9|          2|    1|          2|
+    |reversed_buffer_M_value_1_address0  |  20|          4|    3|         12|
+    |reversed_buffer_M_value_1_ce0       |  20|          4|    1|          4|
+    |reversed_buffer_M_value_1_ce1       |   9|          2|    1|          2|
+    |reversed_buffer_M_value_1_d0        |  14|          3|   32|         96|
+    |reversed_buffer_M_value_1_we0       |  14|          3|    1|          3|
+    |reversed_buffer_M_value_address0    |  20|          4|    3|         12|
+    |reversed_buffer_M_value_ce0         |  20|          4|    1|          4|
+    |reversed_buffer_M_value_ce1         |   9|          2|    1|          2|
+    |reversed_buffer_M_value_d0          |  14|          3|   32|         96|
+    |reversed_buffer_M_value_we0         |  14|          3|    1|          3|
+    |temp1_M_value_1_address0            |  20|          4|    3|         12|
+    |temp1_M_value_1_address1            |  14|          3|    3|          9|
+    |temp1_M_value_1_ce0                 |  20|          4|    1|          4|
+    |temp1_M_value_1_ce1                 |  14|          3|    1|          3|
+    |temp1_M_value_1_d0                  |  14|          3|   32|         96|
+    |temp1_M_value_1_we0                 |  14|          3|    1|          3|
+    |temp1_M_value_1_we1                 |   9|          2|    1|          2|
+    |temp1_M_value_address0              |  20|          4|    3|         12|
+    |temp1_M_value_address1              |  14|          3|    3|          9|
+    |temp1_M_value_ce0                   |  20|          4|    1|          4|
+    |temp1_M_value_ce1                   |  14|          3|    1|          3|
+    |temp1_M_value_d0                    |  14|          3|   32|         96|
+    |temp1_M_value_we0                   |  14|          3|    1|          3|
+    |temp1_M_value_we1                   |   9|          2|    1|          2|
+    |temp2_0_address0                    |  14|          3|    3|          9|
+    |temp2_0_ce0                         |  14|          3|    1|          3|
+    |temp2_0_ce1                         |   9|          2|    1|          2|
+    |temp2_0_we0                         |   9|          2|    1|          2|
+    |temp2_1_address0                    |  14|          3|    3|          9|
+    |temp2_1_ce0                         |  14|          3|    1|          3|
+    |temp2_1_ce1                         |   9|          2|    1|          2|
+    |temp2_1_we0                         |   9|          2|    1|          2|
+    +------------------------------------+----+-----------+-----+-----------+
+    |Total                               |1158|        242|  658|       2197|
+    +------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------+----+----+-----+-----------+
+    |                           Name                           | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                 |  17|   0|   17|          0|
+    |grp_bfs2_fu_130_ap_start_reg                              |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_1_fu_82_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_2_fu_90_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_4_fu_106_ap_start_reg                |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_14_1_fu_112_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_20_1_fu_122_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_36_1_fu_140_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_55_1_fu_98_ap_start_reg   |   1|   0|    1|          0|
+    |grp_fft_8pt_Pipeline_VITIS_LOOP_72_2_fu_152_ap_start_reg  |   1|   0|    1|          0|
+    +----------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                     |  26|   0|   26|          0|
+    +----------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+--------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|   Protocol   | Source Object|    C Type    |
++-------------------+-----+-----+--------------+--------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_none|       fft_8pt|  return value|
+|ap_rst_n           |   in|    1|  ap_ctrl_none|       fft_8pt|  return value|
+|in_stream_TDATA    |   in|   96|          axis|     in_stream|       pointer|
+|in_stream_TVALID   |   in|    1|          axis|     in_stream|       pointer|
+|in_stream_TREADY   |  out|    1|          axis|     in_stream|       pointer|
+|out_stream_TDATA   |  out|   96|          axis|    out_stream|       pointer|
+|out_stream_TVALID  |  out|    1|          axis|    out_stream|       pointer|
+|out_stream_TREADY  |   in|    1|          axis|    out_stream|       pointer|
++-------------------+-----+-----+--------------+--------------+--------------+
+

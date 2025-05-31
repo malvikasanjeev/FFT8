@@ -1,0 +1,160 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fft_8pt'
+================================================================
++ General Information: 
+    * Date:           Sat May 31 09:38:51 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        fft_8pt
+    * Solution:       pynq (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-----------+------------+-----+
+    |               Modules               | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |          |           |            |     |
+    |               & Loops               | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |     LUT    | URAM|
+    +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-----------+------------+-----+
+    |+ fft_8pt                            |     -|  0.04|      126|  1.260e+03|         -|      127|     -|        no|     -|  24 (10%)|  4374 (4%)|  6175 (11%)|    -|
+    | + fft_8pt_Pipeline_1                |     -|  4.06|       10|    100.000|         -|       10|     -|        no|     -|         -|    5 (~0%)|    46 (~0%)|    -|
+    |  o Loop 1                           |     -|  7.30|        8|     80.000|         1|        1|     8|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_2                |     -|  4.06|       10|    100.000|         -|       10|     -|        no|     -|         -|    5 (~0%)|    46 (~0%)|    -|
+    |  o Loop 1                           |     -|  7.30|        8|     80.000|         1|        1|     8|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_VITIS_LOOP_55_1  |     -|  3.68|       10|    100.000|         -|       10|     -|        no|     -|         -|    6 (~0%)|    62 (~0%)|    -|
+    |  o VITIS_LOOP_55_1                  |     -|  7.30|        8|     80.000|         1|        1|     8|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_4                |     -|  4.06|       10|    100.000|         -|       10|     -|        no|     -|         -|    5 (~0%)|    46 (~0%)|    -|
+    |  o Loop 1                           |     -|  7.30|        8|     80.000|         1|        1|     8|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_VITIS_LOOP_14_1  |     -|  2.66|       11|    110.000|         -|       11|     -|        no|     -|         -|   20 (~0%)|    61 (~0%)|    -|
+    |  o VITIS_LOOP_14_1                  |     -|  7.30|        9|     90.000|         3|        1|     8|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_VITIS_LOOP_20_1  |     -|  0.04|       12|    120.000|         -|       12|     -|        no|     -|         -|  409 (~0%)|   118 (~0%)|    -|
+    |  o VITIS_LOOP_20_1                  |     -|  7.30|       10|    100.000|         8|        1|     4|       yes|     -|         -|          -|           -|    -|
+    | + bfs2                              |     -|  0.04|       26|    260.000|         -|       26|     -|        no|     -|         -|  731 (~0%)|    660 (1%)|    -|
+    |  o VITIS_LOOP_27_1_VITIS_LOOP_28_2  |    II|  7.30|       24|    240.000|        19|        2|     4|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_VITIS_LOOP_36_1  |     -|  0.04|       21|    210.000|         -|       21|     -|        no|     -|   10 (4%)|  1445 (1%)|   1620 (3%)|    -|
+    |  o VITIS_LOOP_36_1                  |     -|  7.30|       19|    190.000|        17|        1|     4|       yes|     -|         -|          -|           -|    -|
+    | + fft_8pt_Pipeline_VITIS_LOOP_72_2  |     -|  3.98|       10|    100.000|         -|       10|     -|        no|     -|         -|    8 (~0%)|    80 (~0%)|    -|
+    |  o VITIS_LOOP_72_2                  |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|     -|         -|          -|           -|    -|
+    +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+---------------+-------+--------+--------+
+| Interface  | Register Mode | TDATA | TREADY | TVALID |
++------------+---------------+-------+--------+--------+
+| in_stream  | both          | 96    | 1      | 1      |
+| out_stream | both          | 96    | 1      | 1      |
++------------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+-----------------------+
+| Argument   | Direction | Datatype              |
++------------+-----------+-----------------------+
+| in_stream  | in        | stream<axis_data, 0>& |
+| out_stream | out       | stream<axis_data, 0>& |
++------------+-----------+-----------------------+
+
+* SW-to-HW Mapping
++------------+--------------+-----------+
+| Argument   | HW Interface | HW Type   |
++------------+--------------+-----------+
+| in_stream  | in_stream    | interface |
+| out_stream | out_stream   | interface |
++------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------+-----+--------+---------------+------+---------+---------+
+| Name                                  | DSP | Pragma | Variable      | Op   | Impl    | Latency |
++---------------------------------------+-----+--------+---------------+------+---------+---------+
+| + fft_8pt                             | 24  |        |               |      |         |         |
+|  + fft_8pt_Pipeline_1                 | 0   |        |               |      |         |         |
+|    add_ln49_fu_68_p2                  | -   |        | add_ln49      | add  | fabric  | 0       |
+|  + fft_8pt_Pipeline_2                 | 0   |        |               |      |         |         |
+|    add_ln50_fu_68_p2                  | -   |        | add_ln50      | add  | fabric  | 0       |
+|  + fft_8pt_Pipeline_VITIS_LOOP_55_1   | 0   |        |               |      |         |         |
+|    add_ln55_fu_96_p2                  | -   |        | add_ln55      | add  | fabric  | 0       |
+|  + fft_8pt_Pipeline_4                 | 0   |        |               |      |         |         |
+|    add_ln62_fu_68_p2                  | -   |        | add_ln62      | add  | fabric  | 0       |
+|  + fft_8pt_Pipeline_VITIS_LOOP_14_1   | 0   |        |               |      |         |         |
+|    add_ln14_fu_121_p2                 | -   |        | add_ln14      | add  | fabric  | 0       |
+|  + fft_8pt_Pipeline_VITIS_LOOP_20_1   | 0   |        |               |      |         |         |
+|    add_ln20_fu_194_p2                 | -   |        | add_ln20      | add  | fabric  | 0       |
+|  + bfs2                               | 0   |        |               |      |         |         |
+|    add_ln27_fu_212_p2                 | -   |        | add_ln27      | add  | fabric  | 0       |
+|    add_ln27_1_fu_238_p2               | -   |        | add_ln27_1    | add  | fabric  | 0       |
+|    add_ln30_fu_286_p2                 | -   |        | add_ln30      | add  | fabric  | 0       |
+|    add_ln31_fu_298_p2                 | -   |        | add_ln31      | add  | fabric  | 0       |
+|    add_ln28_fu_304_p2                 | -   |        | add_ln28      | add  | fabric  | 0       |
+|  + fft_8pt_Pipeline_VITIS_LOOP_36_1   | 10  |        |               |      |         |         |
+|    add_ln36_fu_202_p2                 | -   |        | add_ln36      | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U40  | 3   |        | mul_ad_i_i_i  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U41  | 3   |        | mul_bc_i_i_i  | fmul | maxdsp  | 3       |
+|    fsub_32ns_32ns_32_5_full_dsp_1_U36 | 2   |        | p_r_M_value_8 | fsub | fulldsp | 4       |
+|    fsub_32ns_32ns_32_5_full_dsp_1_U37 | 2   |        | p_r_M_value_9 | fsub | fulldsp | 4       |
+|  + fft_8pt_Pipeline_VITIS_LOOP_72_2   | 0   |        |               |      |         |         |
+|    add_ln72_fu_95_p2                  | -   |        | add_ln72      | add  | fabric  | 0       |
++---------------------------------------+-----+--------+---------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-------------------------------------+------+------+--------+---------------------------+---------+------+---------+
+| Name                                | BRAM | URAM | Pragma | Variable                  | Storage | Impl | Latency |
++-------------------------------------+------+------+--------+---------------------------+---------+------+---------+
+| + fft_8pt                           | 0    | 0    |        |                           |         |      |         |
+|   buffer_M_value_U                  | -    | -    |        | buffer_M_value            | ram_1p  | auto | 1       |
+|   buffer_M_value_1_U                | -    | -    |        | buffer_M_value_1          | ram_1p  | auto | 1       |
+|   temp1_M_value_U                   | -    | -    |        | temp1_M_value             | ram_t2p | auto | 1       |
+|   temp1_M_value_1_U                 | -    | -    |        | temp1_M_value_1           | ram_t2p | auto | 1       |
+|   reversed_buffer_M_value_U         | -    | -    |        | reversed_buffer_M_value   | ram_s2p | auto | 1       |
+|   reversed_buffer_M_value_1_U       | -    | -    |        | reversed_buffer_M_value_1 | ram_s2p | auto | 1       |
+|   temp2_0_U                         | -    | -    |        | temp2_0                   | ram_s2p | auto | 1       |
+|   temp2_1_U                         | -    | -    |        | temp2_1                   | ram_s2p | auto | 1       |
+|   FFT_output_0_U                    | -    | -    |        | FFT_output_0              | ram_t2p | auto | 1       |
+|   FFT_output_1_U                    | -    | -    |        | FFT_output_1              | ram_t2p | auto | 1       |
+|  + fft_8pt_Pipeline_VITIS_LOOP_14_1 | 0    | 0    |        |                           |         |      |         |
+|    rev8_U                           | -    | -    |        | rev8                      | rom_1p  | auto | 1       |
++-------------------------------------+------+------+--------+---------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------+-------------------------------------------------+
+| Type      | Options                            | Location                                        |
++-----------+------------------------------------+-------------------------------------------------+
+| pipeline  | II = 1                             | ../../src/fft_8pt.cpp:21 in bfs1                |
+| pipeline  | II = 1                             | ../../src/fft_8pt.cpp:29 in bfs2                |
+| pipeline  | II =1                              | ../../src/fft_8pt.cpp:37 in bfs3                |
+| interface | axis register both port=in_stream  | ../../src/fft_8pt.cpp:44 in fft_8pt, in_stream  |
+| interface | axis register both port=out_stream | ../../src/fft_8pt.cpp:45 in fft_8pt, out_stream |
+| interface | ap_ctrl_none port=return           | ../../src/fft_8pt.cpp:46 in fft_8pt, return     |
+| pipeline  | II= 1                              | ../../src/fft_8pt.cpp:56 in fft_8pt             |
+| pipeline  | II =1                              | ../../src/fft_8pt.cpp:73 in fft_8pt             |
++-----------+------------------------------------+-------------------------------------------------+
+
+
